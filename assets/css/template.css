@@ -4,6 +4,18 @@ body {
   background-color: #f34949;
 }
 
+/* FONTS */
+
+@font-face {
+  font-family: Aleo;
+  src:url('../fonts/aleo-regular-webfont.woff');
+}
+
+@font-face {
+  font-family: WCManoNegra;
+  src:url('../fonts/wcmanonegrabta-webfont.woff');
+}
+
 /* HEADER */
 
 header.cabecalho {
@@ -29,11 +41,10 @@ header.cabecalho ul li a {
   display: inline;
   color: #7c7c7c;
   font-size: 14px;
+  font-family:  Aleo;
 }
 
 header.cabecalho ul li a:hover {
-  color: #f34949;
-  
   text-decoration: underline;
 }
 
@@ -55,8 +66,8 @@ header.cabecalho ul li a:hover {
 }
 
 .slide strong {
-  font-family: arial;
-  font-size: 60px;
+  font-family: WCManoNegra;
+  font-size: 75px;
 
 }
 
