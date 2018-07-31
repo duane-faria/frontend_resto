@@ -4,18 +4,6 @@ body {
   background-color: #f34949;
 }
 
-/* FONTS */
-
-@font-face {
-  font-family: Aleo;
-  src:url('../fonts/aleo-regular-webfont.woff');
-}
-
-@font-face {
-  font-family: WCManoNegra;
-  src:url('../fonts/wcmanonegrabta-webfont.woff');
-}
-
 /* HEADER */
 
 header.cabecalho {
@@ -41,7 +29,7 @@ header.cabecalho ul li a {
   display: inline;
   color: #7c7c7c;
   font-size: 14px;
-  font-family:  Aleo;
+  font-family: Aleo;
 }
 
 header.cabecalho ul li a:hover {
@@ -68,7 +56,6 @@ header.cabecalho ul li a:hover {
 .slide strong {
   font-family: WCManoNegra;
   font-size: 75px;
-
 }
 
 .slide small {}
@@ -76,14 +63,133 @@ header.cabecalho ul li a:hover {
 /* MENU */
 
 .menu {
-  height: 660px;
+  height: auto;
   background-color: #fff;
   margin-top: 5px;
-  display: flex;
 }
 
-.menu img {
+.menu .image {
   height: 72px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-content: center;
 }
+
+.menu_container {
+  display: flex;
+  margin-top: 3%;
+  justify-content: center;
+
+}
+
+.menu_container .c-l {
+  flex: 1;
+  font-family: Aleo;
+  /*  background-color: aquamarine;*/
+  padding-left: 10%;
+}
+
+.menu_container .c-r {
+  flex: 1;
+  font-family: Aleo;
+  /* background-color: royalblue;*/
+  padding-right: 10%;
+}
+
+.menu_destaque {
+  margin-top: 10%;
+  font-family: Aleo;
+  font-size: 25px;
+  height: auto;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #3b3b3b;
+  color: #fff;
+  font-family: arial;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:50px;
+  font-size: 18px;
+  line-height:2;
+}
+
+footer .middle{
+  color: #ebebeb;
+  font-size: 15px;
+}
+
+footer .ar1 {
+  flex: 1;
+}
+
+footer .ar2 {
+  flex: 1;
+}
+
+footer .ar3 {
+  flex: 1;
+}
+
+footer .ar4 {
+  flex: 1;
+}
+
+/* SUPPORT */
+
+/* FONTS */
+
+@font-face {
+  font-family: Aleo;
+  src: url('../fonts/aleo-regular-webfont.woff');
+}
+
+@font-face {
+  font-family: WCManoNegra;
+  src: url('../fonts/wcmanonegrabta-webfont.woff');
+}
+
+/* MEDIAS */
+
+@media(max-width:425px) {
+
+  header.cabecalho ul {
+    list-style: none;
+    margin: 20px;
+  }
+
+}
+
+@media(max-width:600px) {
+
+  .menu_container {
+    flex-direction: column;
+    height: auto;
+  }
+  .menu_container .c-r {
+    margin-bottom: 10%;
+  }
+  .menu_container .c-l {
+      {
+      margin-bottom: 10%;
+    }
+  }
+
+  @media(max-width:320px) {
+
+    header.cabecalho ul {
+      list-style: none;
+      margin: 0px;
+    }
+
+    .slide strong {
+      font-family: WCManoNegra;
+      font-size: 25px;
+    }
+
+  }
