@@ -55,10 +55,15 @@ header.cabecalho ul li a:hover {
 
 .slide strong {
   font-family: WCManoNegra;
-  font-size: 75px;
+  font-size: 80px;
+  margin-bottom: 0;
 }
 
-.slide small {}
+.slide small {
+  font-size:15px; 
+  font-family: Aleo;
+  margin-top: -5px;
+}
 
 /* MENU */
 
@@ -66,6 +71,8 @@ header.cabecalho ul li a:hover {
   height: auto;
   background-color: #fff;
   margin-top: 5px;
+  justify-content: center;
+
 }
 
 .menu .image {
@@ -73,28 +80,28 @@ header.cabecalho ul li a:hover {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  align-content: center;
+
 }
 
 .menu_container {
   display: flex;
   margin-top: 3%;
-  justify-content: center;
-
+  align-content: flex-end;
+  padding-left: 15%;
 }
 
 .menu_container .c-l {
   flex: 1;
   font-family: Aleo;
   /*  background-color: aquamarine;*/
-  padding-left: 10%;
 }
 
 .menu_container .c-r {
   flex: 1;
   font-family: Aleo;
   /* background-color: royalblue;*/
-  padding-right: 10%;
+  justify-content: center;
+
 }
 
 .menu_destaque {
@@ -102,6 +109,44 @@ header.cabecalho ul li a:hover {
   font-family: Aleo;
   font-size: 25px;
   height: auto;
+
+}
+
+.card_group {
+  display: flex;
+  font-family: Aleo;
+  font-size: 15px;
+  justify-content: center;
+}
+
+.card {
+  margin-left: 1%;
+  margin-top: 3%;
+}
+
+.galeria {
+  margin: 0 auto;
+}
+
+.galeria .image_group {
+  float: left;
+  margin-right: 0;
+}
+
+.galeria .image_group2 {
+  float: left;
+  margin-left: 0;
+}
+
+.image-container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+b {
+  font-family: Aleo;
+  font-size: 25px;
 }
 
 /* FOOTER */
@@ -114,14 +159,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:50px;
+  padding: 50px;
   font-size: 18px;
-  line-height:2;
+  line-height: 2;
 }
 
-footer .middle{
+.middle {
   color: #ebebeb;
   font-size: 15px;
+  font-family: Aleo;
 }
 
 footer .ar1 {
@@ -175,21 +221,31 @@ footer .ar4 {
     margin-bottom: 10%;
   }
   .menu_container .c-l {
-      {
-      margin-bottom: 10%;
-    }
+
+    margin-bottom: 10%;
+  }
+  .card_group {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
   }
 
-  @media(max-width:320px) {
-
-    header.cabecalho ul {
-      list-style: none;
-      margin: 0px;
-    }
-
-    .slide strong {
-      font-family: WCManoNegra;
-      font-size: 25px;
-    }
-
+  footer {
+    height: auto;
+    flex-direction: column;
   }
+}
+
+@media(max-width:320px) {
+
+  header.cabecalho ul {
+    list-style: none;
+    margin: 0px;
+  }
+
+  .slide strong {
+    font-family: WCManoNegra;
+    font-size: 25px;
+  }
+
+}
